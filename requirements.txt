@@ -3,7 +3,7 @@ numpy
 scipy>=1.7.*
 tqdm
 notebook
-nbgrader>=0.8.*
+nbgrader>=0.7.*
 simpleitk>=2.1.*
 scikit-learn>=1.0.*
 requests
