@@ -9,10 +9,10 @@ if __name__ == '__main__':
         author_email='Joeran.Bosma@radboudumc.nl',
         long_description=long_description,
         long_description_content_type="text/markdown",
-        url='https://github.com/DIAGNijmegen/ismi',
+        url='https://github.com/DIAGNijmegen/ismi_utils',
         project_urls={
-            "Bug Tracker": "https://github.com/DIAGNijmegen/ismi/issues"
+            "Bug Tracker": "https://github.com/DIAGNijmegen/ismi_utils/issues"
         },
         license='Apache 2.0',
-        packages=['ismi'],
+        packages=['ismi_utils'],
     )
