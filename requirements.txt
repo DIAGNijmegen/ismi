@@ -6,7 +6,6 @@ jupyter>=1.0.*
 nbgrader>=0.8.*
 simpleitk>=2.1.*
 scikit-learn>=1.0.*
-pydicom>=2.2.*
 requests
 ipywidgets
 imgaug
