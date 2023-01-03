@@ -14,6 +14,4 @@
 
 from ismi.io import download_data
 
-print("Hello from ismi.__init__.py")
-
 __all__ = ["download_data"]
