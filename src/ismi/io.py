@@ -1,12 +1,17 @@
+import functools
+import pathlib
+import shutil
+import zipfile
+from typing import Union
+
 import requests
 from tqdm import tqdm
-import zipfile
-import pathlib
-import functools
-import shutil
 
 
-def download_data(file_name, link, extract_dir=None):
+def download_data(file_name: str, link: str, extract_dir: Union[pathlib.Path, str] = None):
+    """
+    Download a zipfile from the specified link and extract it to a directory.
+    """
     r = requests.get(link, stream=True, allow_redirects=True)
     if r.status_code != 200:
         r.raise_for_status()  # Will only raise for 4xx codes, so...
@@ -24,7 +29,7 @@ def download_data(file_name, link, extract_dir=None):
         with path.open("wb") as f:
             shutil.copyfileobj(r_raw, f)
 
-    # Default to current directory
+    # Unzip downloaded file (default to current directory)
     if extract_dir is None:
         extract_dir = pathlib.Path(".")
     with zipfile.ZipFile(file_name, "r") as zip_ref:
