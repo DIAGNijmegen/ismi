@@ -12,4 +12,6 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-print("Hello from ismi_utils.__init__.py")
+from ismi_utils.io import download_data
+
+__all__ = ["download_data"]
