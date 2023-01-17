@@ -1,7 +1,7 @@
 import shutil
 from pathlib import Path
 
-from ismi import download_data
+from ismi_utils import download_data
 
 
 def test_download_data():

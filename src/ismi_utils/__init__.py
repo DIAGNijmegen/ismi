@@ -12,6 +12,6 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-from ismi.io import download_data
+from ismi_utils.io import download_data
 
 __all__ = ["download_data"]
